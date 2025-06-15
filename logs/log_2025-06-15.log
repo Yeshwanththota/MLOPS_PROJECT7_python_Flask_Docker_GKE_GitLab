@@ -1,0 +1,30 @@
+2025-06-15 06:54:15,349 - INFO - Data loaded successfully from artifacts/raw/data.csv
+2025-06-15 06:54:15,350 - INFO - Handling outliers for column: SepalWidthCm
+2025-06-15 06:54:15,353 - INFO - Outliers handled for column: SepalWidthCm
+2025-06-15 06:54:15,353 - INFO - Splitting data into training and testing sets
+2025-06-15 06:54:15,353 - INFO - Data split successfully
+2025-06-15 06:54:15,353 - INFO - Processed data saved successfully
+2025-06-15 06:54:15,353 - INFO - Data processing completed successfully
+2025-06-15 06:56:03,761 - INFO - Loading processed data
+2025-06-15 06:56:03,773 - INFO - Data loaded successfully
+2025-06-15 06:56:03,773 - INFO - Training the model
+2025-06-15 06:56:03,790 - INFO - Model trained successfully
+2025-06-15 06:56:03,790 - INFO - Evaluating the model
+2025-06-15 06:56:03,803 - INFO - Model evaluation metrics: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+2025-06-15 06:56:04,627 - INFO - Confusion matrix saved successfully
+2025-06-15 06:56:04,630 - INFO - Model training and evaluation completed with Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+2025-06-15 07:04:35,291 - INFO - Data loaded successfully from artifacts/raw/data.csv
+2025-06-15 07:04:35,291 - INFO - Handling outliers for column: SepalWidthCm
+2025-06-15 07:04:35,300 - INFO - Outliers handled for column: SepalWidthCm
+2025-06-15 07:04:35,300 - INFO - Splitting data into training and testing sets
+2025-06-15 07:04:35,300 - INFO - Data split successfully
+2025-06-15 07:04:35,317 - INFO - Processed data saved successfully
+2025-06-15 07:04:35,317 - INFO - Data processing completed successfully
+2025-06-15 07:04:35,317 - INFO - Loading processed data
+2025-06-15 07:04:35,317 - INFO - Data loaded successfully
+2025-06-15 07:04:35,317 - INFO - Training the model
+2025-06-15 07:04:35,317 - INFO - Model trained successfully
+2025-06-15 07:04:35,317 - INFO - Evaluating the model
+2025-06-15 07:04:35,335 - INFO - Model evaluation metrics: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+2025-06-15 07:04:35,760 - INFO - Confusion matrix saved successfully
+2025-06-15 07:04:35,760 - INFO - Model training and evaluation completed with Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
