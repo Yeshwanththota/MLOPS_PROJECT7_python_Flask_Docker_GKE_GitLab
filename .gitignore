@@ -1,0 +1,5 @@
+venv/
+MLOPS_project7.egg-info/
+logs/
+*.ipynb
+gcp-key.json

@@ -1,0 +1,46 @@
+image: google/cloud-sdk:latest
+stages:
+  - checkout
+  - build
+  - deploy
+variables:
+  PROJECT_ID: "lofty-voyage-461011-f1"
+  CLUSTER_NAME: "mlopsproject7cluster"
+  CLUSTER_REGION: "us-central1"
+  REGISTRY : "us-central1-docker.pkg.dev"
+  
+checkout_code:
+  stage: checkout
+  script:
+    - echo "Checking out code..."
+
+build_image:
+  stage: build
+  services:
+    - name: docker.dind
+      command: ["--tls=false"]
+  variables:
+    DOCKER_HOST: tcp://docker:2375/
+    DOCKER_DRIVER: overlay2
+    DOCKER_TLS_CERTDIR:""
+  before_script:
+    - echo "$gcp_SA_key" | base64 -d > key.json
+    - gcloud auth activate-service-account --key-file=key.json
+    - gcloud auth configure-docker $REGISTRY
+  script:
+    - echo "Building Docker image..."
+    - docker build -t $REGISTRY/$PROJECT_ID/mlops7/mlops7_image:latest .
+    - docker push $REGISTRY/$PROJECT_ID/mlops7/mlops7_image:latest
+deploy_to_gke:
+  stage: deploy
+  before_script:
+    - echo "$gcp_SA_key" | base64 -d > key.json
+    - gcloud auth activate-service-account --key-file=key.json
+    - gcloud auth configure-docker $REGISTRY
+   
+  script:
+    - echo "Deploying to GKE..."
+    - gcloud container clusters get-credentials $CLUSTER_NAME --region $CLUSTER_REGION --project $PROJECT_ID
+    - kubectl apply -f kubernetes_deployment.yaml
+
+
