@@ -8,7 +8,12 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" title="GKE" alt="Google Cloud / GKE" width="40" height="40"/>&nbsp; 
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" title="GitLab" alt="GitLab" width="40" height="40"/>&nbsp; </p>
 
-Highlights
+**Summary**
+Leveraged GitLab for code versioning and CI/CD automation. Configured GitLab pipelines to build Docker images, push to Google Container Registry, and deploy to GKE, with secure handling of service account credentials and environment variables.
+
+**Go to mlops_project7_results for outputs**
+
+**Highlights**
 
 1.	Code versioning and CI-CD using GitLab.
 2.	GIthub for easy collaboration, Gitlab for stronger security and enterprise system.
